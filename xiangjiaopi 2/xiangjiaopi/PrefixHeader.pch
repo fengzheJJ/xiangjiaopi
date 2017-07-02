@@ -1,0 +1,212 @@
+//
+//  PrefixHeader.pch
+//  Kaoqian3.0_HD
+//
+//  Created by wihan on 16/6/8.
+//  Copyright © 2016年 wihan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+    //系统库
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    //本地Category
+    #import "UIImage+Extension.h"
+    #import "UIBarButtonItem+Extension.h"
+  //  #import "NSString+Size.h"
+    //第三方Category
+    #import "UIView+LayoutMethods.h"
+ //   #import "UIView+AEBHandyAutoLayout.h"
+  //  #import "MBProgressHUD+Extension.h"
+ //   #import "UIView+ToastExtension.h"
+ //   #import "KQCommonRefreshHeader.h"
+    //第三方头文件
+  //  #import "Masonry.h"
+    //本地公共头文件
+    #import "AppDelegate.h"
+   // #import "NetworkingConfiguration.h"
+    //#import "KQPublicParamTool.h"
+   // #import "KQNotificationDefine.h"
+   // #import "JsonToModelTool.h"
+   // #import "CLCAnswerQuestionDefine.h"
+  //  #import "AFNetworkReachabilityManager.h"
+
+#ifdef DEBUG //调试状态, 打开LOG功能
+#define MyLog(...) NSLog(__VA_ARGS__)
+#else //发布状态, 关闭LOG功能
+#define MyLog(...)
+#endif//DEBUG
+
+//是否为iOS7以上版本
+#define kIOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+#define iOS(version) ([[UIDevice currentDevice].systemVersion doubleValue] >= version)
+//当前版本号
+#define kCurrentVersion ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"])
+
+//App id
+#define kAppId @"747773996"
+
+//Appstore url
+#define kAppstoreUrl ([NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%@", kAppId])
+
+//BundleID
+#define kBundleID ([[NSBundle mainBundle] bundleIdentifier])
+
+//Device
+#define kDevice ([[UIDevice currentDevice] model])
+
+//应用名称，后台统计使用
+#define kAppName @"da-cloudclass-app"
+
+//Iphone为0 ipad为2
+#define kDeviceType @"0"
+
+//操作系统类型
+#define kOsType @"ios"
+
+#define kTextPalceFont (13.f)
+
+//是否为iphone4英寸
+#define kFourInch ([UIScreen mainScreen].bounds.size.height == 480.0)
+
+#define kSixInch ([UIScreen mainScreen].bounds.size.height >= 667)
+
+//是否为iphone5/5s/6/6s/5se英寸
+#define kFiveInch ([UIScreen mainScreen].bounds.size.height == 568)
+
+//NavigationBar高度
+#define kNavigationBarHeight 44.0f
+
+//StatusBar高度
+#define kStatusBarHeight 20.0f
+
+//TabBar高度
+#define kTabBarHeight 49.0f
+
+//StatusBar+NavigationBar高度
+#define kTopBarHeight (kStatusBarHeight+kNavigationBarHeight)
+
+//ToolBar高度
+#define kToolBarHeight 49.0f
+
+// 颜色
+#define kMyColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+/** 手机号码校验规则
+ 手机号以1开头11位纯数字
+ */
+#define PHONE_NO_REGEX  @"^1\\d{10}$"
+
+//#define Content_REGEX @".*[`~@#$%^&*()+=|{}''\\[\\].<>/~@#￥%……&*（）——+|{}【】‘；：”“’、？\\\\]+.*£·€"
+
+#define Content_REGEX @"#%$￥£&@*‖·€"
+
+//获取当前AppDelegate
+#define kKQAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+//友盟iphone appkey
+#define kKQUMAppkey @"52b7e7df56240b52f51e4ce8"
+
+//shareSDK-iphone appkey
+#define kCLCShareSDKAppkey @"1c81ada37b39b"
+
+//sinaWeibo-iphone appkey
+#define kCLCSinaWeiboAppkey @"153372299"
+
+//sinaWeibo-iphone Secret
+#define kCLCSinaWeiboSecret @"6f9c813d2c616c938bdd24e88c293908"
+
+//sinaWeibo-iphone redirectUri
+#define kCLCSinaWeiboRedirectUri @"http://www.dongao.com"
+
+#define kLoginSuccessRefresh @"kLoginSuccessRefresh"
+
+//审核状态修改
+#define kCheckStatusChanged @"kCheckStatusChanged"
+
+//支付并激活成功
+#define kPaySuccess @"kPaySuccess"
+
+#define kEmptyHeight (SCREEN_HEIGHT - kNavigationBarHeight - kStatusBarHeight)
+
+#define kPLAYERSCREEN_WIDTH MIN(SCREEN_HEIGHT, SCREEN_WIDTH)
+#define kPLAYERSCREEN_HEIGHT MAX(SCREEN_HEIGHT, SCREEN_WIDTH)
+
+//过期code
+#define kExpiredCode -6
+//踢出code
+#define kLoginOutCode -7
+
+#define kGetWidthBaseRatio(x) (([UIScreen mainScreen].bounds.size.width*x)/1024)
+
+#define kGetHeightBaseRatio(x) (([UIScreen mainScreen].bounds.size.height*x)/768)
+
+//数据库名称
+#define kKQDatabaseName @"CloudClass.sqlite"
+
+//#define kDefaultShopId  @"1"
+#define kDefaultShopId  @"43"
+
+//下载，是否开启使用ip替换host
+#define kReplaceHostWithIP YES
+
+//下载，是否开启使用备用域名
+#define kOpenReserveHostName YES
+
+// 开启验证播放器的http dns定义
+#define kKQPlayReplaceHttpHeader    1
+
+#define kPracticeExaminationType @"1003"
+
+#define kHomeworkExaminationType @"1"
+
+#define kProfileLeftW 360.f
+
+
+#define kBuglyAppId @"78a2c4a7b1"
+
+//是否第一次进入首页
+#define kIsFirstEnterHQHomepageViewController @"isFirstEnterHQHomepageViewController"
+
+/**
+ * httpserver服务本地地址，这里用它来替换kDownloadRootPath;
+ * 播放本地m3u8时，要通过httpserver的方式，模拟在线播放；直接播放时播放不了的；同样用这种方法可以播放mp4等类型文件。
+ */
+#define kLocalPlayURL @"http://127.0.0.1:12360/"
+
+/**
+ * 当前云课堂的数据库
+ */
+#define CloudClassDataBase "CloudClass.sqlite"
+
+//#define ShopMallBaseURL @"http://webupload.admin.test.com/ec/shop"
+
+//下载状态改变后发出通知
+#define CDownloadStateChangeNotice @"CDownloadStateChangeNotice"
+
+//H5购买页的userAgent
+#define kdongPayH5 @"dongao/payH5"
+#define kPaySuccess @"kPaySuccess"
+#define kPayNeedRefreshPreWebView @"kPayNeedRefreshPreWebView"
+#define kPayRefreshCurrentPage @"kPayRefreshCurrentPage"
+#define kAPP_ID          @"wx92ba1c0b9e8e7453"        //APPID
+#define kAppleID @"785818890" //对应appstore的id
+#define kWXORAlipaySuccess @"kWXORAlipaySuccess"
+
+#define kMyorderListURL @"https://mweb.api.dongao.com/uc/myorder.html"
+#define kAboutUsURL @"https://mweb.api.dongao.com/appInfo/about.html"
+
+#define kPaymentURL @"https://mweb.api.dongao.com/appInfo/toApp.html"
+
+//张雨的PC机
+//#define kMyorderListURL @"http://172.16.200.16/uc/myorder.html"
+//#define kAboutUsURL @"http://172.16.200.16/appInfo/about.html"
+//
+//#define kPaymentURL @"http://172.16.200.16/appInfo/toApp.html"
+
+#endif //__OBJC__
+
+#endif /* PrefixHeader_pch */
