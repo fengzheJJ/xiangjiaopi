@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupViews];
-    self.imageView.backgroundColor = [UIColor redColor];
+    self.imageView.backgroundColor = [UIColor greenColor];
     [self setupFrames];
 }
 
