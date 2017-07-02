@@ -65,6 +65,7 @@
     //设置字体
     textAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:18];
     [appearance setTitleTextAttributes:textAttrs];
+    [appearance setTranslucent:NO];
 }
 
 /**

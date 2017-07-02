@@ -19,6 +19,7 @@
   //  #import "NSString+Size.h"
     //第三方Category
     #import "UIView+LayoutMethods.h"
+    #import "NSObject+Additional.h"
  //   #import "UIView+AEBHandyAutoLayout.h"
   //  #import "MBProgressHUD+Extension.h"
  //   #import "UIView+ToastExtension.h"

@@ -35,13 +35,13 @@
     
     //添加四个子控制器
     XJGirlPlayViewController *homepage = [[XJGirlPlayViewController alloc] init];
-    [self addOneChildVc:homepage title:@"美女主播" imageName:@"tab_home_n" selectedImageName:@"tab_home_h"];
+    [self addOneChildVc:homepage title:@"美女主播" imageName:@"tabbar_index3_12" selectedImageName:@"tabbar_index3_03"];
     
     XJMessageViewController * newClassRoomVc = [[XJMessageViewController alloc]init];
-    [self addOneChildVc:newClassRoomVc title:@"消息" imageName:@"tab_classrm_n" selectedImageName:@"tab_classrm_h"];
+    [self addOneChildVc:newClassRoomVc title:@"消息" imageName:@"tabbar_index3_13" selectedImageName:@"tabbar_index3_05"];
     
     XJMyProfileViewController * myProfile = [[XJMyProfileViewController alloc]init];
-    [self addOneChildVc:myProfile title:@"我的" imageName:@"tab_my_n" selectedImageName:@"tab_my_h"];
+    [self addOneChildVc:myProfile title:@"我的" imageName:@"tabbar_index3_14" selectedImageName:@"tabbar_index3_07"];
     
     //设置tabbar背景色
 //    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, kTabBarHeight)];
