@@ -28,6 +28,7 @@
   //  #import "Masonry.h"
     //本地公共头文件
     #import "AppDelegate.h"
+    #import "XJNetApiManager.h"
    // #import "NetworkingConfiguration.h"
     //#import "KQPublicParamTool.h"
    // #import "KQNotificationDefine.h"

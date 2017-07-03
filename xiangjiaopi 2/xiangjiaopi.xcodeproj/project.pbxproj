@@ -13,6 +13,7 @@
 		4D4B7DD81F094CED00789943 /* NSString+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7DD71F094CED00789943 /* NSString+Additional.m */; };
 		4D4B7DDC1F0950C000789943 /* NSDictionary+NetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7DDB1F0950C000789943 /* NSDictionary+NetworkingMethods.m */; };
 		4D4B7DDF1F0950F800789943 /* NSArray+NetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7DDE1F0950F800789943 /* NSArray+NetworkingMethods.m */; };
+		4D4B7DE51F0A597900789943 /* XJNetApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7DE41F0A597900789943 /* XJNetApiManager.m */; };
 		4DB5DA4C1F078C5B00D00828 /* UIView+ZJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5DA3C1F078C5B00D00828 /* UIView+ZJFrame.m */; };
 		4DB5DA4D1F078C5B00D00828 /* UIViewController+ZJScrollPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5DA3E1F078C5B00D00828 /* UIViewController+ZJScrollPageController.m */; };
 		4DB5DA4E1F078C5B00D00828 /* ZJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5DA401F078C5B00D00828 /* ZJCollectionView.m */; };
@@ -133,6 +134,9 @@
 		4D4B7DDB1F0950C000789943 /* NSDictionary+NetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NetworkingMethods.m"; sourceTree = "<group>"; };
 		4D4B7DDD1F0950F800789943 /* NSArray+NetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NetworkingMethods.h"; sourceTree = "<group>"; };
 		4D4B7DDE1F0950F800789943 /* NSArray+NetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NetworkingMethods.m"; sourceTree = "<group>"; };
+		4D4B7DE31F0A597900789943 /* XJNetApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJNetApiManager.h; sourceTree = "<group>"; };
+		4D4B7DE41F0A597900789943 /* XJNetApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJNetApiManager.m; sourceTree = "<group>"; };
+		4D4B7DE61F0A5A6100789943 /* XJNetService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJNetService.h; sourceTree = "<group>"; };
 		4DB5DA3B1F078C5B00D00828 /* UIView+ZJFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJFrame.h"; sourceTree = "<group>"; };
 		4DB5DA3C1F078C5B00D00828 /* UIView+ZJFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJFrame.m"; sourceTree = "<group>"; };
 		4DB5DA3D1F078C5B00D00828 /* UIViewController+ZJScrollPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZJScrollPageController.h"; sourceTree = "<group>"; };
@@ -343,6 +347,9 @@
 		4D4B7DCB1F093D5C00789943 /* NetWorkTool */ = {
 			isa = PBXGroup;
 			children = (
+				4D4B7DE61F0A5A6100789943 /* XJNetService.h */,
+				4D4B7DE31F0A597900789943 /* XJNetApiManager.h */,
+				4D4B7DE41F0A597900789943 /* XJNetApiManager.m */,
 				4D4B7DCC1F0948A400789943 /* XJNetWorkClient.h */,
 				4D4B7DCD1F0948A400789943 /* XJNetWorkClient.m */,
 				4D4B7DD91F0950A700789943 /* Categary */,
@@ -1046,6 +1053,7 @@
 				4DFDFED41F092881001719B1 /* SDImageCache.m in Sources */,
 				4D4B7DDC1F0950C000789943 /* NSDictionary+NetworkingMethods.m in Sources */,
 				4DFDFEA31F09286C001719B1 /* NSObject+MJProperty.m in Sources */,
+				4D4B7DE51F0A597900789943 /* XJNetApiManager.m in Sources */,
 				4DB5DA621F078F2500D00828 /* XJNewPersonViewController.m in Sources */,
 				4D4B7DD11F094AB600789943 /* NSObject+Additional.m in Sources */,
 				4DFDFE671F09104D001719B1 /* MJRefreshNormalHeader.m in Sources */,

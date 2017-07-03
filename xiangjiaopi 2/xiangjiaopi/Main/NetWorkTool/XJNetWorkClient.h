@@ -7,8 +7,8 @@
 //
 
 #import "AFHTTPSessionManager.h"
+#import "XJNetService.h"
 
-#define API_BASE_URL @"http://"
 
 
 typedef NS_ENUM(NSUInteger, RequestMethod) {

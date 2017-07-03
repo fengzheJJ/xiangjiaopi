@@ -25,6 +25,24 @@
     [self setupFrames];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"phone"] = @"15811186564";
+    dict[@"push_token"] = @"sdfjddfs";
+    dict[@"username"] = @"光之夏日";
+    dict[@"sex"] = @"1";
+    dict[@"avator"] = @"/2017/06/17/17/14976900576387.jpg";
+    dict[@"code"] = @"123456";
+    dict[@"birthday"] = @"1987-12-02";
+    dict[@"location"] = @"1";
+//    dict[@"sign"] = @"15811186564";
+    [[XJNetApiManager sharedManager] request_register_params:dict block:^(id data, NSError *error) {
+        
+    }];
+}
+
 #pragma mark - setup
 - (void)setupViews{
     

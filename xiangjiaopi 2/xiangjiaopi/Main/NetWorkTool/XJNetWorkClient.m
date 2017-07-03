@@ -10,7 +10,7 @@
 #import "NSString+Additional.h"
 #import "NSDictionary+NetworkingMethods.h"
 
-#define Md5Salt @""
+#define Md5Salt @"7thl15T12BNY"
 
 static XJNetWorkClient *_client = nil;
 
@@ -287,11 +287,11 @@ static XJNetWorkClient *_client = nil;
     
     //设置通用参数
     if (apiTpye == VertifyParamsNormal) {//如果是normal 则认为需要公共参数
-        requestParams[@"osType"] = kOsType;
-        UIDevice *device = [UIDevice currentDevice];
-        //获取系统版本
-        NSString *systemVersion = device.systemVersion;
-        requestParams[@"osVersion"] = systemVersion;
+//        requestParams[@"osType"] = kOsType;
+//        UIDevice *device = [UIDevice currentDevice];
+//        //获取系统版本
+//        NSString *systemVersion = device.systemVersion;
+//        requestParams[@"osVersion"] = systemVersion;
     }
     requestParams[@"sign"] = [self getSignStr:requestParams];
     
@@ -307,8 +307,10 @@ static XJNetWorkClient *_client = nil;
     if (requestParams) {
         
         NSString *toMD5 = [requestParams combineDictionaryToString];
-        toMD5 = [toMD5 stringByAppendingString:Md5Salt];
+        toMD5 = [Md5Salt stringByAppendingString:toMD5];
         signStr = [toMD5 md5Str];
+        //全部转化成大写
+        signStr = signStr.uppercaseString;
     }
     return signStr;
 }

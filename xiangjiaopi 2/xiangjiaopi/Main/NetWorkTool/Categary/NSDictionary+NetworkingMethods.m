@@ -54,7 +54,7 @@
             obj = [NSString stringWithFormat:@"%@", obj];
         }
         
-        [result addObject:[NSString stringWithFormat:@"%@=%@", key, obj]];
+        [result addObject:[NSString stringWithFormat:@"%@%@", key, obj]];
     }];
     //排序数组
     NSArray *sortedResult = [result sortedArrayUsingSelector:@selector(compare:)];
@@ -63,7 +63,7 @@
     //组合成新的str,如：userName=1234&password=1234
     [sortedResult enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         NSString *paramString = (NSString *)obj;
-        (idx == 0) ? (finalStr = paramString) : (finalStr = [finalStr stringByAppendingString:[NSString stringWithFormat:@"&%@", paramString]]);
+        (idx == 0) ? (finalStr = paramString) : (finalStr = [finalStr stringByAppendingString:[NSString stringWithFormat:@"%@", paramString]]);
     }];
     return finalStr;
 }
