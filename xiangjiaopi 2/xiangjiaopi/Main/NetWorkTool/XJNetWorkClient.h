@@ -28,12 +28,12 @@ typedef NS_ENUM(NSUInteger, VertifyParams) {
 + (instancetype)shareClient;
 
 
-- (void)requestJsonDataWithUrl:(NSString *)url
+- (void)requestDictDataWithUrl:(NSString *)url
                  requestMethod:(RequestMethod)method
                          param:(NSDictionary *)param
                          block:(void (^)(id object, NSError *error))blk;
 
-- (void)requestJsonDataWithUrl:(NSString *)url
+- (void)requestDictDataWithUrl:(NSString *)url
                  requestMethod:(RequestMethod)method
                          param:(NSDictionary *)param
               autoShowErrorMsg:(BOOL)autoShowErrorMsg

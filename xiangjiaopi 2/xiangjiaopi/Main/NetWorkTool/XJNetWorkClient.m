@@ -60,14 +60,14 @@ static XJNetWorkClient *_client = nil;
 
 #pragma mark - Public
 
-- (void)requestJsonDataWithUrl:(NSString *)url
+- (void)requestDictDataWithUrl:(NSString *)url
                  requestMethod:(RequestMethod)method
                          param:(NSDictionary *)param
                          block:(void (^)(id object, NSError *error))blk {
-    [self requestJsonDataWithUrl:url requestMethod:method param:param autoShowErrorMsg:YES block:blk];
+    [self requestDictDataWithUrl:url requestMethod:method param:param autoShowErrorMsg:YES block:blk];
 }
 
-- (void)requestJsonDataWithUrl:(NSString *)url
+- (void)requestDictDataWithUrl:(NSString *)url
                  requestMethod:(RequestMethod)method
                          param:(NSDictionary *)param
               autoShowErrorMsg:(BOOL)autoShowErrorMsg

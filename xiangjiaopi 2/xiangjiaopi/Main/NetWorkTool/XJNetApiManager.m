@@ -22,7 +22,7 @@
 
 - (void)request_register_params:(NSDictionary *)params block:(void(^)(id data, NSError *error))blk{
     
-    [[XJNetWorkClient shareClient] requestJsonDataWithUrl:RegisterService requestMethod:POST param:params block:^(id object, NSError *error) {
+    [[XJNetWorkClient shareClient] requestDictDataWithUrl:RegisterService requestMethod:POST param:params block:^(id object, NSError *error) {
         blk(object, error);
     }];
 }
