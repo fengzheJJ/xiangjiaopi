@@ -107,6 +107,7 @@
 		4DFDFEE11F092881001719B1 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFDFECB1F092881001719B1 /* UIImageView+WebCache.m */; };
 		4DFDFEE21F092881001719B1 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFDFECD1F092881001719B1 /* UIView+WebCache.m */; };
 		4DFDFEE31F092881001719B1 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFDFECF1F092881001719B1 /* UIView+WebCacheOperation.m */; };
+		B628235E1F0BF0CE0042323B /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B628235D1F0BF0CE0042323B /* iconfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -332,6 +333,7 @@
 		4DFDFECD1F092881001719B1 /* UIView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCache.m"; sourceTree = "<group>"; };
 		4DFDFECE1F092881001719B1 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		4DFDFECF1F092881001719B1 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		B628235D1F0BF0CE0042323B /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -569,6 +571,7 @@
 		4DF495DE1F077F120029F961 /* xiangjiaopi */ = {
 			isa = PBXGroup;
 			children = (
+				B628235A1F0BEDDC0042323B /* Resource */,
 				4DF496351F07823D0029F961 /* Main */,
 				4DF4961D1F0780FC0029F961 /* GirlPlay */,
 				4DF496221F0780FC0029F961 /* Message */,
@@ -970,6 +973,30 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		B628235A1F0BEDDC0042323B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B628235B1F0BEE080042323B /* image */,
+				B628235C1F0BEE080042323B /* ttf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B628235B1F0BEE080042323B /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		B628235C1F0BEE080042323B /* ttf */ = {
+			isa = PBXGroup;
+			children = (
+				B628235D1F0BF0CE0042323B /* iconfont.ttf */,
+			);
+			path = ttf;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1041,13 +1068,11 @@
 					};
 					4DF495F41F077F120029F961 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 4LA88C2Z6M;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4DF495DB1F077F120029F961;
 					};
 					4DF495FF1F077F120029F961 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 4LA88C2Z6M;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4DF495DB1F077F120029F961;
 					};
@@ -1080,6 +1105,7 @@
 			files = (
 				4DF4965F1F07867A0029F961 /* .gitignore in Resources */,
 				4DF495EF1F077F120029F961 /* LaunchScreen.storyboard in Resources */,
+				B628235E1F0BF0CE0042323B /* iconfont.ttf in Resources */,
 				4DFDFE9A1F09286C001719B1 /* Info.plist in Resources */,
 				4DF495EC1F077F120029F961 /* Assets.xcassets in Resources */,
 				4DFDFE691F09104D001719B1 /* MJRefresh.bundle in Resources */,
@@ -1382,7 +1408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4LA88C2Z6M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = xiangjiaopiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengtangkeji.app.xiangjiaopiTests;
@@ -1395,7 +1421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4LA88C2Z6M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = xiangjiaopiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengtangkeji.app.xiangjiaopiTests;
@@ -1407,7 +1433,7 @@
 		4DF496101F077F120029F961 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 4LA88C2Z6M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = xiangjiaopiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengtangkeji.app.xiangjiaopiUITests;
@@ -1419,7 +1445,7 @@
 		4DF496111F077F120029F961 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 4LA88C2Z6M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = xiangjiaopiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengtangkeji.app.xiangjiaopiUITests;
