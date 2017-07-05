@@ -27,4 +27,18 @@
     }];
 }
 
+//首页热点
+- (void)request_homepagehot_params:(NSDictionary *)params block:(void(^)(id data, NSError *error))blk{
+    [[XJNetWorkClient shareClient] requestDictDataWithUrl:HomePageHotService requestMethod:GET param:params block:^(id object, NSError *error) {
+        blk(object, error);
+    }];
+}
+//滚动条
+- (void)request_homeAds_params:(NSDictionary *)params block:(void(^)(id data, NSError *error))blk{
+    
+    [[XJNetWorkClient shareClient] requestDictDataWithUrl:HomeAdsService requestMethod:GET param:params block:^(id object, NSError *error) {
+        blk(object, error);
+    }];
+}
+
 @end

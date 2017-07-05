@@ -16,10 +16,12 @@
     //本地Category
     #import "UIImage+Extension.h"
     #import "UIBarButtonItem+Extension.h"
-  //  #import "NSString+Size.h"
+    #import "UIColor+hexString.h"
+    #import "NSString+Size.h"
     //第三方Category
     #import "UIView+LayoutMethods.h"
     #import "NSObject+Additional.h"
+    #import "UIImageView+WebCache.h"
  //   #import "UIView+AEBHandyAutoLayout.h"
   //  #import "MBProgressHUD+Extension.h"
  //   #import "UIView+ToastExtension.h"

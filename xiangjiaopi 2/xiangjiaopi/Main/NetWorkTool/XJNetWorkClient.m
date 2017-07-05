@@ -84,8 +84,7 @@ static XJNetWorkClient *_client = nil;
     [self.dic setObject:@"1122" forKey:key];
     //添加公共参数 可以对特定的接口做特定的处理 不添加common参数
     //设置通用参数
-    NSDictionary *commonParams = [self appendVerifyInfo:param apiType:VertifyParamsNormal];
-    
+    NSMutableDictionary *commonParams = (NSMutableDictionary *)[self appendVerifyInfo:param apiType:VertifyParamsNormal];
     [self showLoading];
     
     switch (method) {
@@ -254,7 +253,7 @@ static XJNetWorkClient *_client = nil;
 
 - (void)handleResponseWithObj:(id)obj autoShowErrorMsg:(BOOL)autoShowErrorMsg error:(NSError **)error {
     
-    if ([obj[@"status"] intValue] != 1) {
+    if (![obj[@"status"] isEqualToString:@"0000"]) {
         *error = [NSError errorWithDomain:@"Server response status error!" code:[obj[@"status"] integerValue] userInfo:obj];
         
         NSString *message = obj[@"message"];

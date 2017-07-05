@@ -15,4 +15,10 @@
 #define RegisterService @"public/register"
 #define CityListService @"public/getAreas"
 
+//首页
+#define HomePageHotService @"index/index"
+
+//banner
+#define HomeAdsService @"index/ads"
+
 #endif /* XJNetService_h */

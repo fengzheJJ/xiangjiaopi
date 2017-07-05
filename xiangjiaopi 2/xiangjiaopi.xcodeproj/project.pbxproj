@@ -14,6 +14,12 @@
 		4D4B7DDC1F0950C000789943 /* NSDictionary+NetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7DDB1F0950C000789943 /* NSDictionary+NetworkingMethods.m */; };
 		4D4B7DDF1F0950F800789943 /* NSArray+NetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7DDE1F0950F800789943 /* NSArray+NetworkingMethods.m */; };
 		4D4B7DE51F0A597900789943 /* XJNetApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7DE41F0A597900789943 /* XJNetApiManager.m */; };
+		4D4B7E321F0B5EE300789943 /* XJGirlPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7E311F0B5EE300789943 /* XJGirlPlayViewController.m */; };
+		4D4B7E361F0B5F0700789943 /* CMPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7E351F0B5F0700789943 /* CMPlayerManager.m */; };
+		4D4B7E3E1F0B608A00789943 /* XJGirlPlayHomeContentItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7E3D1F0B608A00789943 /* XJGirlPlayHomeContentItemModel.m */; };
+		4D4B7E411F0B63C100789943 /* XJGirlPlayHomeContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7E401F0B63C100789943 /* XJGirlPlayHomeContentTableViewCell.m */; };
+		4D4B7E441F0BAFF300789943 /* UIColor+hexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7E431F0BAFF300789943 /* UIColor+hexString.m */; };
+		4D4B7E471F0BBF1000789943 /* XJGirlPlayContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7E461F0BBF1000789943 /* XJGirlPlayContentViewController.m */; };
 		4DB5DA4C1F078C5B00D00828 /* UIView+ZJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5DA3C1F078C5B00D00828 /* UIView+ZJFrame.m */; };
 		4DB5DA4D1F078C5B00D00828 /* UIViewController+ZJScrollPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5DA3E1F078C5B00D00828 /* UIViewController+ZJScrollPageController.m */; };
 		4DB5DA4E1F078C5B00D00828 /* ZJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5DA401F078C5B00D00828 /* ZJCollectionView.m */; };
@@ -33,7 +39,6 @@
 		4DF495EF1F077F120029F961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF495ED1F077F120029F961 /* LaunchScreen.storyboard */; };
 		4DF495FA1F077F120029F961 /* xiangjiaopiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF495F91F077F120029F961 /* xiangjiaopiTests.m */; };
 		4DF496051F077F120029F961 /* xiangjiaopiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF496041F077F120029F961 /* xiangjiaopiUITests.m */; };
-		4DF4962E1F0781160029F961 /* XJGirlPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF4962D1F0781160029F961 /* XJGirlPlayViewController.m */; };
 		4DF496311F07812B0029F961 /* XJMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF496301F07812B0029F961 /* XJMessageViewController.m */; };
 		4DF496341F0781410029F961 /* XJMyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF496331F0781410029F961 /* XJMyProfileViewController.m */; };
 		4DF496411F0782730029F961 /* CMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF4963E1F0782730029F961 /* CMTabBarViewController.m */; };
@@ -137,6 +142,18 @@
 		4D4B7DE31F0A597900789943 /* XJNetApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJNetApiManager.h; sourceTree = "<group>"; };
 		4D4B7DE41F0A597900789943 /* XJNetApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJNetApiManager.m; sourceTree = "<group>"; };
 		4D4B7DE61F0A5A6100789943 /* XJNetService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJNetService.h; sourceTree = "<group>"; };
+		4D4B7E301F0B5EE300789943 /* XJGirlPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJGirlPlayViewController.h; sourceTree = "<group>"; };
+		4D4B7E311F0B5EE300789943 /* XJGirlPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJGirlPlayViewController.m; sourceTree = "<group>"; };
+		4D4B7E341F0B5F0700789943 /* CMPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPlayerManager.h; sourceTree = "<group>"; };
+		4D4B7E351F0B5F0700789943 /* CMPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPlayerManager.m; sourceTree = "<group>"; };
+		4D4B7E3C1F0B608A00789943 /* XJGirlPlayHomeContentItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJGirlPlayHomeContentItemModel.h; sourceTree = "<group>"; };
+		4D4B7E3D1F0B608A00789943 /* XJGirlPlayHomeContentItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJGirlPlayHomeContentItemModel.m; sourceTree = "<group>"; };
+		4D4B7E3F1F0B63C100789943 /* XJGirlPlayHomeContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJGirlPlayHomeContentTableViewCell.h; sourceTree = "<group>"; };
+		4D4B7E401F0B63C100789943 /* XJGirlPlayHomeContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJGirlPlayHomeContentTableViewCell.m; sourceTree = "<group>"; };
+		4D4B7E421F0BAFF300789943 /* UIColor+hexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hexString.h"; sourceTree = "<group>"; };
+		4D4B7E431F0BAFF300789943 /* UIColor+hexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hexString.m"; sourceTree = "<group>"; };
+		4D4B7E451F0BBF1000789943 /* XJGirlPlayContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJGirlPlayContentViewController.h; sourceTree = "<group>"; };
+		4D4B7E461F0BBF1000789943 /* XJGirlPlayContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJGirlPlayContentViewController.m; sourceTree = "<group>"; };
 		4DB5DA3B1F078C5B00D00828 /* UIView+ZJFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJFrame.h"; sourceTree = "<group>"; };
 		4DB5DA3C1F078C5B00D00828 /* UIView+ZJFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJFrame.m"; sourceTree = "<group>"; };
 		4DB5DA3D1F078C5B00D00828 /* UIViewController+ZJScrollPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZJScrollPageController.h"; sourceTree = "<group>"; };
@@ -176,8 +193,6 @@
 		4DF496001F077F120029F961 /* xiangjiaopiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xiangjiaopiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF496041F077F120029F961 /* xiangjiaopiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xiangjiaopiUITests.m; sourceTree = "<group>"; };
 		4DF496061F077F120029F961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DF4962C1F0781160029F961 /* XJGirlPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJGirlPlayViewController.h; sourceTree = "<group>"; };
-		4DF4962D1F0781160029F961 /* XJGirlPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJGirlPlayViewController.m; sourceTree = "<group>"; };
 		4DF4962F1F07812B0029F961 /* XJMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJMessageViewController.h; sourceTree = "<group>"; };
 		4DF496301F07812B0029F961 /* XJMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJMessageViewController.m; sourceTree = "<group>"; };
 		4DF496321F0781410029F961 /* XJMyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJMyProfileViewController.h; sourceTree = "<group>"; };
@@ -377,6 +392,84 @@
 			path = Categary;
 			sourceTree = "<group>";
 		};
+		4D4B7DE71F0A98FF00789943 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D4B7E2E1F0B5EE300789943 /* GirlPlayHomePage */ = {
+			isa = PBXGroup;
+			children = (
+				4D4B7E2F1F0B5EE300789943 /* Controller */,
+			);
+			path = GirlPlayHomePage;
+			sourceTree = "<group>";
+		};
+		4D4B7E2F1F0B5EE300789943 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D4B7E301F0B5EE300789943 /* XJGirlPlayViewController.h */,
+				4D4B7E311F0B5EE300789943 /* XJGirlPlayViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4D4B7E331F0B5F0700789943 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				4D4B7E341F0B5F0700789943 /* CMPlayerManager.h */,
+				4D4B7E351F0B5F0700789943 /* CMPlayerManager.m */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		4D4B7E371F0B602000789943 /* GirlPlayHomeContent */ = {
+			isa = PBXGroup;
+			children = (
+				4D4B7E381F0B606100789943 /* Controller */,
+				4D4B7E391F0B606100789943 /* Model */,
+				4D4B7E3A1F0B606100789943 /* Tool */,
+				4D4B7E3B1F0B606100789943 /* View */,
+			);
+			path = GirlPlayHomeContent;
+			sourceTree = "<group>";
+		};
+		4D4B7E381F0B606100789943 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D4B7E451F0BBF1000789943 /* XJGirlPlayContentViewController.h */,
+				4D4B7E461F0BBF1000789943 /* XJGirlPlayContentViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4D4B7E391F0B606100789943 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D4B7E3C1F0B608A00789943 /* XJGirlPlayHomeContentItemModel.h */,
+				4D4B7E3D1F0B608A00789943 /* XJGirlPlayHomeContentItemModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D4B7E3A1F0B606100789943 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		4D4B7E3B1F0B606100789943 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D4B7E3F1F0B63C100789943 /* XJGirlPlayHomeContentTableViewCell.h */,
+				4D4B7E401F0B63C100789943 /* XJGirlPlayHomeContentTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4DB5DA3A1F078C5B00D00828 /* ZJScrollPageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +497,7 @@
 		4DB5DA541F078ECD00D00828 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				4D4B7DE71F0A98FF00789943 /* View */,
 				4DB5DA551F078ECD00D00828 /* Controller */,
 			);
 			path = Follow;
@@ -522,45 +616,14 @@
 		4DF4961D1F0780FC0029F961 /* GirlPlay */ = {
 			isa = PBXGroup;
 			children = (
+				4D4B7E371F0B602000789943 /* GirlPlayHomeContent */,
+				4D4B7E331F0B5F0700789943 /* AudioPlayer */,
+				4D4B7E2E1F0B5EE300789943 /* GirlPlayHomePage */,
 				4DB5DA541F078ECD00D00828 /* Follow */,
 				4DB5DA561F078ECD00D00828 /* Hot */,
 				4DB5DA581F078ECD00D00828 /* NewPerson */,
-				4DF4961E1F0780FC0029F961 /* Controller */,
-				4DF4961F1F0780FC0029F961 /* Model */,
-				4DF496201F0780FC0029F961 /* Tool */,
-				4DF496211F0780FC0029F961 /* View */,
 			);
 			path = GirlPlay;
-			sourceTree = "<group>";
-		};
-		4DF4961E1F0780FC0029F961 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4DF4962C1F0781160029F961 /* XJGirlPlayViewController.h */,
-				4DF4962D1F0781160029F961 /* XJGirlPlayViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		4DF4961F1F0780FC0029F961 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4DF496201F0780FC0029F961 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
-		4DF496211F0780FC0029F961 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		4DF496221F0780FC0029F961 /* Message */ = {
@@ -685,6 +748,8 @@
 				4DF4964C1F0784D90029F961 /* UIBarButtonItem+Extension.m */,
 				4DF496441F0782C70029F961 /* UIImage+Extension.h */,
 				4DF496451F0782C70029F961 /* UIImage+Extension.m */,
+				4D4B7E421F0BAFF300789943 /* UIColor+hexString.h */,
+				4D4B7E431F0BAFF300789943 /* UIColor+hexString.m */,
 			);
 			path = Categary;
 			sourceTree = "<group>";
@@ -1043,6 +1108,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4B7E471F0BBF1000789943 /* XJGirlPlayContentViewController.m in Sources */,
 				4DFDFE821F09285A001719B1 /* AFURLSessionManager.m in Sources */,
 				4DF495E71F077F120029F961 /* ViewController.m in Sources */,
 				4DFDFE9C1F09286C001719B1 /* MJFoundation.m in Sources */,
@@ -1060,7 +1126,6 @@
 				4DFDFE651F09104D001719B1 /* MJRefreshBackStateFooter.m in Sources */,
 				4DFDFEE01F092881001719B1 /* UIImageView+HighlightedWebCache.m in Sources */,
 				4DB5DA4E1F078C5B00D00828 /* ZJCollectionView.m in Sources */,
-				4DF4962E1F0781160029F961 /* XJGirlPlayViewController.m in Sources */,
 				4D4B7DD81F094CED00789943 /* NSString+Additional.m in Sources */,
 				4DFDFE9E1F09286C001719B1 /* MJPropertyKey.m in Sources */,
 				4DFDFEDC1F092881001719B1 /* UIButton+WebCache.m in Sources */,
@@ -1090,6 +1155,7 @@
 				4DFDFE5C1F09104D001719B1 /* MJRefreshBackFooter.m in Sources */,
 				4DFDFE621F09104D001719B1 /* MJRefreshAutoStateFooter.m in Sources */,
 				4DF496611F07867A0029F961 /* UIView+LayoutMethods.m in Sources */,
+				4D4B7E411F0B63C100789943 /* XJGirlPlayHomeContentTableViewCell.m in Sources */,
 				4DFDFE7F1F09285A001719B1 /* AFSecurityPolicy.m in Sources */,
 				4DFDFEE31F092881001719B1 /* UIView+WebCacheOperation.m in Sources */,
 				4DFDFEA01F09286C001719B1 /* NSObject+MJClass.m in Sources */,
@@ -1104,11 +1170,14 @@
 				4DFDFE6E1F09104D001719B1 /* UIView+MJExtension.m in Sources */,
 				4DFDFED31F092881001719B1 /* NSImage+WebCache.m in Sources */,
 				4DB5DA521F078C5B00D00828 /* ZJSegmentStyle.m in Sources */,
+				4D4B7E361F0B5F0700789943 /* CMPlayerManager.m in Sources */,
 				4DFDFE601F09104D001719B1 /* MJRefreshAutoGifFooter.m in Sources */,
 				4DF496461F0782C70029F961 /* UIImage+Extension.m in Sources */,
 				4DFDFE9B1F09286C001719B1 /* MJExtensionConst.m in Sources */,
 				4DFDFEA21F09286C001719B1 /* NSObject+MJKeyValue.m in Sources */,
+				4D4B7E441F0BAFF300789943 /* UIColor+hexString.m in Sources */,
 				4DFDFED81F092881001719B1 /* SDWebImageDownloader.m in Sources */,
+				4D4B7E321F0B5EE300789943 /* XJGirlPlayViewController.m in Sources */,
 				4DF496561F0785970029F961 /* GTMBase64.m in Sources */,
 				4DFDFEDA1F092881001719B1 /* SDWebImageManager.m in Sources */,
 				4DFDFEDE1F092881001719B1 /* UIImage+MultiFormat.m in Sources */,
@@ -1124,6 +1193,7 @@
 				4DF496601F07867A0029F961 /* UIView+AEBHandyAutoLayout.m in Sources */,
 				4DF4964A1F07848E0029F961 /* KQUINavigationViewController.m in Sources */,
 				4DB5DA4C1F078C5B00D00828 /* UIView+ZJFrame.m in Sources */,
+				4D4B7E3E1F0B608A00789943 /* XJGirlPlayHomeContentItemModel.m in Sources */,
 				4DFDFE9D1F09286C001719B1 /* MJProperty.m in Sources */,
 				4DFDFE5B1F09104D001719B1 /* MJRefreshAutoFooter.m in Sources */,
 				4DFDFE641F09104D001719B1 /* MJRefreshBackNormalFooter.m in Sources */,

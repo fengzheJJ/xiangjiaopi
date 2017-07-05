@@ -15,5 +15,11 @@
 + (instancetype)sharedManager;
 
 #pragma mark - request
+//注册
 - (void)request_register_params:(NSDictionary *)params block:(void(^)(id data, NSError *error))blk;
+
+//首页热点
+- (void)request_homepagehot_params:(NSDictionary *)params block:(void(^)(id data, NSError *error))blk;
+//滚动条
+- (void)request_homeAds_params:(NSDictionary *)params block:(void(^)(id data, NSError *error))blk;
 @end

@@ -11,6 +11,7 @@
 #import "XJHotViewController.h"
 #import "XJFollowViewController.h"
 #import "XJNewPersonViewController.h"
+#import "XJGirlPlayContentViewController.h"
 
 
 @interface XJGirlPlayViewController ()<ZJScrollPageViewDelegate>
@@ -61,13 +62,14 @@
 - (UIViewController<ZJScrollPageViewChildVcDelegate> *)childViewController:(UIViewController<ZJScrollPageViewChildVcDelegate> *)reuseViewController forIndex:(NSInteger)index {
     
     UIViewController<ZJScrollPageViewChildVcDelegate> * childVc = nil;
-    if (index == 0) {
-        childVc = [[XJHotViewController alloc]init];
-    } else if (index == 1){
-        childVc = [[XJNewPersonViewController alloc]init];
-    } else{
-        childVc = [[XJFollowViewController alloc]init];
-    }
+//    if (index == 0) {
+//        childVc = [[XJHotViewController alloc]init];
+//    } else if (index == 1){
+//        childVc = [[XJNewPersonViewController alloc]init];
+//    } else{
+//        childVc = [[XJFollowViewController alloc]init];
+//    }
+    childVc = [[XJGirlPlayContentViewController alloc]init];
     return childVc;
 }
 - (NSArray *)titles{
