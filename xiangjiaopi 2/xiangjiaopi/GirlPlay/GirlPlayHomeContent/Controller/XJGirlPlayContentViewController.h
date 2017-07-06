@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ZJScrollPageViewDelegate.h"
+#import "KQUINavigationViewController.h"
 
 @interface XJGirlPlayContentViewController : UIViewController<ZJScrollPageViewChildVcDelegate>
 
+@property (nonatomic,weak)KQUINavigationViewController * rootNav;
 @end

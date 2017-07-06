@@ -22,6 +22,7 @@
 @property (nonatomic,strong)UIButton *callBtn;
 @property (nonatomic,strong)UILabel *descLbl;
 @property (nonatomic,strong)UILabel *orderCountLbl;
+@property (nonatomic,strong)UIImageView *lineImageView;
 @end
 
 
@@ -62,6 +63,7 @@
     [self.contentView addSubview:self.callBtn];
     [self.contentView addSubview:self.descLbl];
     [self.contentView addSubview:self.orderCountLbl];
+    [self.contentView addSubview:self.lineImageView];
 }
 
 - (void)setupData{
@@ -87,14 +89,14 @@
         }
         self.distanceLbl.text = self.itemModel.location_name;
         self.timeLbl.text = self.itemModel.friendly_time;
-        NSString * labelsStr = @"";
+        __block NSString * labelsStr = @"";
         if (self.itemModel.lables.count) {
             [self.itemModel.lables enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 if (idx == 0) {
-                    [labelsStr stringByAppendingString:obj];
+                    labelsStr = obj;
                 } else {
-                    [labelsStr stringByAppendingString:@"、"];
-                    [labelsStr stringByAppendingString:obj];
+                    labelsStr = [labelsStr stringByAppendingString:@"、"];
+                    labelsStr =[labelsStr stringByAppendingString:obj];
                 }
             }];
         }
@@ -107,10 +109,10 @@
 
 - (void)setupFrames{
     
-    CGFloat topMargin = 20.f;
+    CGFloat topMargin = 13.f;
     CGFloat imageWH = XJGirlPlayHomeContentTableViewCellH - topMargin *2;
     self.avaterImageView.frame = CGRectMake(topMargin, topMargin, imageWH, imageWH);
-    CGFloat titleAndBtnH = 28.f;
+    CGFloat titleAndBtnH = 18.f;
     CGSize timeSize = [self.timeLbl.text sizeWithFont:self.timeLbl.font];
     self.timeLbl.frame = CGRectMake(SCREEN_WIDTH - topMargin - timeSize.width, topMargin, timeSize.width, titleAndBtnH);
     
@@ -118,15 +120,39 @@
     CGSize localSize = [self.distanceLbl.text sizeWithFont:self.distanceLbl.font];
     self.distanceLbl.frame = CGRectMake(CGRectGetMinX(self.timeLbl.frame) - timeLeftMargin - localSize.width, topMargin, localSize.width, titleAndBtnH);
     
-    CGFloat btnW = 58.f;
-    CGFloat titleLeftMargin = 24.f;
-    CGFloat btnMargin = 7.f;
+    CGFloat btnW = 39.f;
+    CGFloat titleLeftMargin = 16.f;
+    CGFloat btnMargin = 5.f;
+    CGFloat imageRightMargin = CGRectGetMaxX(self.avaterImageView.frame) + titleLeftMargin;
     CGFloat titleMax = CGRectGetMinX(self.distanceLbl.frame) - topMargin - titleLeftMargin - imageWH - 2 * btnW - 2*btnMargin;
     CGSize titleSize = [self.titleLbl.text sizeWithFont:self.titleLbl.font maxW:titleMax];
-    self.titleLbl.frame = CGRectMake(CGRectGetMaxX(self.avaterImageView.frame) + titleLeftMargin, topMargin, titleSize.width, titleAndBtnH);
+    self.titleLbl.frame = CGRectMake(imageRightMargin, topMargin, titleSize.width, titleAndBtnH);
     self.sexBtn.frame = CGRectMake(CGRectGetMaxX(self.titleLbl.frame) +btnMargin, topMargin, btnW, titleAndBtnH);
     self.onLineBtn.frame = CGRectMake(CGRectGetMaxX(self.sexBtn.frame) +btnMargin, topMargin, btnW, titleAndBtnH);
+    CGFloat labelsTopMargin = 10.f;
+    CGFloat labelsImageWH = 15.f;
+    self.lablesImageView.frame = CGRectMake(imageRightMargin, labelsTopMargin + CGRectGetMaxY(self.titleLbl.frame), labelsImageWH, labelsImageWH);
     
+    CGFloat callBtnWH = 60.f;
+    CGFloat callBtnRightMargin = 13.f;
+    CGFloat callBtnTopMargin = 11.f;
+    self.callBtn.frame = CGRectMake(SCREEN_WIDTH - callBtnWH - callBtnRightMargin, CGRectGetMaxY(self.titleLbl.frame) + callBtnTopMargin, callBtnWH, callBtnWH);
+    CGFloat lablsrightMargin = 5.f;
+    CGFloat lablesMax = CGRectGetMinX(self.callBtn.frame) - CGRectGetMaxX(self.lablesImageView.frame) -lablsrightMargin;
+    CGSize lablesSize = [self.lablesLbl.text sizeWithFont:self.lablesLbl.font maxW:lablesMax];
+    CGFloat lableLblH = 17.f;
+    self.lablesLbl.frame = CGRectMake(CGRectGetMaxX(self.lablesImageView.frame) +lablsrightMargin, CGRectGetMaxY(self.titleLbl.frame) + labelsTopMargin, lablesSize.width, lableLblH);
+    CGFloat playBtnW = 66.f;
+    CGFloat playBtnH = 28.f;
+    self.playBtn.frame = CGRectMake(imageRightMargin, CGRectGetMaxY(self.lablesLbl.frame) + labelsTopMargin, playBtnW, playBtnH);
+    CGSize orderSize = [self.orderCountLbl.text sizeWithFont:self.orderCountLbl.font];
+    CGFloat orderTopMargin = 10.f;
+    self.orderCountLbl.frame = CGRectMake(SCREEN_WIDTH - orderSize.width - topMargin, CGRectGetMaxY(self.callBtn.frame) + orderTopMargin, orderSize.width, orderSize.height);
+    CGFloat descMax = CGRectGetMinX(self.orderCountLbl.frame) - imageRightMargin;
+    CGSize descSize = [self.descLbl.text sizeWithFont:self.descLbl.font maxW:descMax];
+    CGFloat descLblH = 20.f;
+    self.descLbl.frame = CGRectMake(imageRightMargin, CGRectGetMaxY(self.playBtn.frame) + callBtnTopMargin, descSize.width, descLblH);
+    self.lineImageView.frame = CGRectMake(topMargin, XJGirlPlayHomeContentTableViewCellH -0.5, SCREEN_WIDTH - topMargin, 0.5);
 }
 
 #pragma mark -setdata
@@ -147,7 +173,7 @@
 
 - (void)callBtnClick:(UIButton *)btn{
 
-    if (self.callBtn) {
+    if (self.callBlock) {
         self.callBlock(self.itemModel);
     }
 }
@@ -157,6 +183,7 @@
 
     if (!_avaterImageView) {
         _avaterImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
+        _avaterImageView.backgroundColor = [UIColor redColor];
     }
     return _avaterImageView;
 }
@@ -189,6 +216,9 @@
     if (!_onLineBtn) {
         _onLineBtn = [[UIButton alloc]initWithFrame:CGRectZero];
         _onLineBtn.userInteractionEnabled = NO;
+        [_onLineBtn setTitle:@"在线" forState:UIControlStateNormal];
+        _onLineBtn.titleLabel.font = [UIFont systemFontOfSize:17];
+        [_onLineBtn setTitleColor:[UIColor hexStringToColor:@"f99f35"] forState:UIControlStateNormal];
         _onLineBtn.layer.cornerRadius = 5.f;
         _onLineBtn.layer.borderWidth = .5;
         _onLineBtn.layer.borderColor = [UIColor hexStringToColor:@"f99f35"].CGColor;
@@ -200,14 +230,20 @@
 
     if (!_distanceLbl) {
         _distanceLbl = [[UILabel alloc]initWithFrame:CGRectZero];
+        _distanceLbl.font = [UIFont systemFontOfSize:14];
+        _distanceLbl.textColor = [UIColor hexStringToColor:@"8d8d8d"];
+        _distanceLbl.textAlignment = NSTextAlignmentLeft;
     }
     return _distanceLbl;
 }
 
 - (UILabel *)timeLbl{
 
-    if (!_titleLbl) {
+    if (!_timeLbl) {
         _timeLbl = [[UILabel alloc]initWithFrame:CGRectZero];
+        _timeLbl.font = [UIFont systemFontOfSize:14];
+        _timeLbl.textColor = [UIColor hexStringToColor:@"8d8d8d"];
+        _timeLbl.textAlignment = NSTextAlignmentLeft;
     }
     return _timeLbl;
 }
@@ -216,6 +252,7 @@
 
     if (!_lablesImageView) {
         _lablesImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
+        _lablesImageView.backgroundColor = [UIColor redColor];
     }
     return _lablesImageView;
 }
@@ -226,6 +263,7 @@
         _lablesLbl = [[UILabel alloc]initWithFrame:CGRectZero];
         _lablesLbl.textAlignment = NSTextAlignmentLeft;
         _lablesLbl.numberOfLines = 1;
+        _lablesLbl.textColor = [UIColor hexStringToColor:@"fb86a7"];
         _lablesLbl.font = [UIFont systemFontOfSize:12];
     }
     return _lablesLbl;
@@ -236,6 +274,7 @@
     if (!_playBtn) {
         _playBtn = [[UIButton alloc]initWithFrame:CGRectZero];
         [_playBtn addTarget:self action:@selector(playBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_playBtn setBackgroundColor:[UIColor greenColor]];
     }
     return _playBtn;
 }
@@ -245,6 +284,7 @@
     if (!_callBtn) {
         _callBtn = [[UIButton alloc]initWithFrame:CGRectZero];
         [_callBtn addTarget:self action:@selector(callBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_callBtn setBackgroundColor:[UIColor greenColor]];
     }
     return _callBtn;
 }
@@ -255,7 +295,7 @@
         _descLbl =  [[UILabel alloc]initWithFrame:CGRectZero];
         _descLbl.font = [UIFont systemFontOfSize:14];
         _descLbl.textAlignment = NSTextAlignmentLeft;
-        _descLbl.textColor = [UIColor redColor];
+        _descLbl.textColor = [UIColor hexStringToColor:@"8d8d8d"];
     }
     return _descLbl;
 }
@@ -266,8 +306,17 @@
         _orderCountLbl = [[UILabel alloc]initWithFrame:CGRectZero];
         _orderCountLbl.font = [UIFont systemFontOfSize:12];
         _orderCountLbl.textAlignment = NSTextAlignmentLeft;
-        _orderCountLbl.textColor = [UIColor redColor];
+        _orderCountLbl.textColor = [UIColor hexStringToColor:@"8d8d8d"];
     }
     return _orderCountLbl;
+}
+
+- (UIImageView *)lineImageView{
+
+    if (!_lineImageView) {
+        _lineImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
+        _lineImageView.backgroundColor = [UIColor hexStringToColor:@"efefef"];
+    }
+    return _lineImageView;
 }
 @end

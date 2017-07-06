@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D1058E31F0D30450071937F /* XJFansCommonItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1058E21F0D30450071937F /* XJFansCommonItemModel.m */; };
+		4D1058E61F0D30610071937F /* XJFansCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1058E51F0D30610071937F /* XJFansCommonTableViewCell.m */; };
+		4D1058E91F0D34430071937F /* XJFansCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1058E81F0D34430071937F /* XJFansCommonViewController.m */; };
+		4D1058F01F0D381D0071937F /* XJGirlPlayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1058EF1F0D381D0071937F /* XJGirlPlayDetailViewController.m */; };
+		4D1058F31F0D3B560071937F /* XJGirlDetailImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1058F21F0D3B560071937F /* XJGirlDetailImageCollectionViewCell.m */; };
+		4D1058F61F0D401D0071937F /* XJGirlDetailDescTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1058F51F0D401D0071937F /* XJGirlDetailDescTableViewCell.m */; };
 		4D4B7DCE1F0948A400789943 /* XJNetWorkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7DCD1F0948A400789943 /* XJNetWorkClient.m */; };
 		4D4B7DD11F094AB600789943 /* NSObject+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7DD01F094AB600789943 /* NSObject+Additional.m */; };
 		4D4B7DD51F094C2500789943 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B7DD41F094C2500789943 /* MBProgressHUD.m */; };
@@ -128,6 +134,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D1058E11F0D30450071937F /* XJFansCommonItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJFansCommonItemModel.h; sourceTree = "<group>"; };
+		4D1058E21F0D30450071937F /* XJFansCommonItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJFansCommonItemModel.m; sourceTree = "<group>"; };
+		4D1058E41F0D30610071937F /* XJFansCommonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJFansCommonTableViewCell.h; sourceTree = "<group>"; };
+		4D1058E51F0D30610071937F /* XJFansCommonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJFansCommonTableViewCell.m; sourceTree = "<group>"; };
+		4D1058E71F0D34430071937F /* XJFansCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJFansCommonViewController.h; sourceTree = "<group>"; };
+		4D1058E81F0D34430071937F /* XJFansCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJFansCommonViewController.m; sourceTree = "<group>"; };
+		4D1058EE1F0D381D0071937F /* XJGirlPlayDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJGirlPlayDetailViewController.h; sourceTree = "<group>"; };
+		4D1058EF1F0D381D0071937F /* XJGirlPlayDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJGirlPlayDetailViewController.m; sourceTree = "<group>"; };
+		4D1058F11F0D3B560071937F /* XJGirlDetailImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJGirlDetailImageCollectionViewCell.h; sourceTree = "<group>"; };
+		4D1058F21F0D3B560071937F /* XJGirlDetailImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJGirlDetailImageCollectionViewCell.m; sourceTree = "<group>"; };
+		4D1058F41F0D401D0071937F /* XJGirlDetailDescTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJGirlDetailDescTableViewCell.h; sourceTree = "<group>"; };
+		4D1058F51F0D401D0071937F /* XJGirlDetailDescTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJGirlDetailDescTableViewCell.m; sourceTree = "<group>"; };
 		4D4B7DCC1F0948A400789943 /* XJNetWorkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJNetWorkClient.h; sourceTree = "<group>"; };
 		4D4B7DCD1F0948A400789943 /* XJNetWorkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJNetWorkClient.m; sourceTree = "<group>"; };
 		4D4B7DCF1F094AB600789943 /* NSObject+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additional.h"; sourceTree = "<group>"; };
@@ -361,6 +379,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D1058DD1F0D2F970071937F /* FansCommon */ = {
+			isa = PBXGroup;
+			children = (
+				4D1058DE1F0D2F970071937F /* Controller */,
+				4D1058DF1F0D2F970071937F /* Model */,
+				4D1058E01F0D2F970071937F /* View */,
+			);
+			path = FansCommon;
+			sourceTree = "<group>";
+		};
+		4D1058DE1F0D2F970071937F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D1058E71F0D34430071937F /* XJFansCommonViewController.h */,
+				4D1058E81F0D34430071937F /* XJFansCommonViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4D1058DF1F0D2F970071937F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D1058E11F0D30450071937F /* XJFansCommonItemModel.h */,
+				4D1058E21F0D30450071937F /* XJFansCommonItemModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D1058E01F0D2F970071937F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D1058E41F0D30610071937F /* XJFansCommonTableViewCell.h */,
+				4D1058E51F0D30610071937F /* XJFansCommonTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D1058EA1F0D37B20071937F /* GirlPlayDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4D1058EB1F0D37B20071937F /* Controller */,
+				4D1058EC1F0D37B20071937F /* Model */,
+				4D1058ED1F0D37B20071937F /* View */,
+			);
+			path = GirlPlayDetail;
+			sourceTree = "<group>";
+		};
+		4D1058EB1F0D37B20071937F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D1058EE1F0D381D0071937F /* XJGirlPlayDetailViewController.h */,
+				4D1058EF1F0D381D0071937F /* XJGirlPlayDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4D1058EC1F0D37B20071937F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D1058ED1F0D37B20071937F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D1058F11F0D3B560071937F /* XJGirlDetailImageCollectionViewCell.h */,
+				4D1058F21F0D3B560071937F /* XJGirlDetailImageCollectionViewCell.m */,
+				4D1058F41F0D401D0071937F /* XJGirlDetailDescTableViewCell.h */,
+				4D1058F51F0D401D0071937F /* XJGirlDetailDescTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4D4B7DCB1F093D5C00789943 /* NetWorkTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -619,6 +711,8 @@
 		4DF4961D1F0780FC0029F961 /* GirlPlay */ = {
 			isa = PBXGroup;
 			children = (
+				4D1058EA1F0D37B20071937F /* GirlPlayDetail */,
+				4D1058DD1F0D2F970071937F /* FansCommon */,
 				4D4B7E371F0B602000789943 /* GirlPlayHomeContent */,
 				4D4B7E331F0B5F0700789943 /* AudioPlayer */,
 				4D4B7E2E1F0B5EE300789943 /* GirlPlayHomePage */,
@@ -1140,6 +1234,8 @@
 				4DFDFE9C1F09286C001719B1 /* MJFoundation.m in Sources */,
 				4DFDFE6B1F09104D001719B1 /* NSBundle+MJRefresh.m in Sources */,
 				4DFDFE6A1F09104D001719B1 /* MJRefreshConst.m in Sources */,
+				4D1058F01F0D381D0071937F /* XJGirlPlayDetailViewController.m in Sources */,
+				4D1058E61F0D30610071937F /* XJFansCommonTableViewCell.m in Sources */,
 				4DF495E41F077F120029F961 /* AppDelegate.m in Sources */,
 				4DFDFE7E1F09285A001719B1 /* AFNetworkReachabilityManager.m in Sources */,
 				4DFDFED41F092881001719B1 /* SDImageCache.m in Sources */,
@@ -1151,6 +1247,7 @@
 				4DFDFE671F09104D001719B1 /* MJRefreshNormalHeader.m in Sources */,
 				4DFDFE651F09104D001719B1 /* MJRefreshBackStateFooter.m in Sources */,
 				4DFDFEE01F092881001719B1 /* UIImageView+HighlightedWebCache.m in Sources */,
+				4D1058F61F0D401D0071937F /* XJGirlDetailDescTableViewCell.m in Sources */,
 				4DB5DA4E1F078C5B00D00828 /* ZJCollectionView.m in Sources */,
 				4D4B7DD81F094CED00789943 /* NSString+Additional.m in Sources */,
 				4DFDFE9E1F09286C001719B1 /* MJPropertyKey.m in Sources */,
@@ -1167,6 +1264,7 @@
 				4DB5DA4F1F078C5B00D00828 /* ZJContentView.m in Sources */,
 				4DB5DA5C1F078EF400D00828 /* XJFollowViewController.m in Sources */,
 				4DFDFEA11F09286C001719B1 /* NSObject+MJCoding.m in Sources */,
+				4D1058E91F0D34430071937F /* XJFansCommonViewController.m in Sources */,
 				4DFDFE5F1F09104D001719B1 /* MJRefreshHeader.m in Sources */,
 				4DFDFE611F09104D001719B1 /* MJRefreshAutoNormalFooter.m in Sources */,
 				4DFDFED21F092881001719B1 /* NSData+ImageContentType.m in Sources */,
@@ -1178,6 +1276,7 @@
 				4DB5DA511F078C5B00D00828 /* ZJScrollSegmentView.m in Sources */,
 				4DFDFEDB1F092881001719B1 /* SDWebImagePrefetcher.m in Sources */,
 				4DB5DA4D1F078C5B00D00828 /* UIViewController+ZJScrollPageController.m in Sources */,
+				4D1058F31F0D3B560071937F /* XJGirlDetailImageCollectionViewCell.m in Sources */,
 				4DFDFE5C1F09104D001719B1 /* MJRefreshBackFooter.m in Sources */,
 				4DFDFE621F09104D001719B1 /* MJRefreshAutoStateFooter.m in Sources */,
 				4DF496611F07867A0029F961 /* UIView+LayoutMethods.m in Sources */,
@@ -1203,6 +1302,7 @@
 				4DFDFEA21F09286C001719B1 /* NSObject+MJKeyValue.m in Sources */,
 				4D4B7E441F0BAFF300789943 /* UIColor+hexString.m in Sources */,
 				4DFDFED81F092881001719B1 /* SDWebImageDownloader.m in Sources */,
+				4D1058E31F0D30450071937F /* XJFansCommonItemModel.m in Sources */,
 				4D4B7E321F0B5EE300789943 /* XJGirlPlayViewController.m in Sources */,
 				4DF496561F0785970029F961 /* GTMBase64.m in Sources */,
 				4DFDFEDA1F092881001719B1 /* SDWebImageManager.m in Sources */,

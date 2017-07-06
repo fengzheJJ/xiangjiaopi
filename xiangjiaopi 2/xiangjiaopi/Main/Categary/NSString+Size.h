@@ -13,10 +13,6 @@
 - (CGSize)sizeWithFont:(UIFont *)font;
 /**
  *  添加混合中文计算的字符串长度
- *
- *  @param text 待验证的字符串
- *
- *  @return 返回计算的长度
  */
 -(NSUInteger) unicodeLengthOfString;
 
@@ -53,7 +49,7 @@
  *  AES 加密
  *
  *  @param initStr   初始化string
- *  @param encodeStr 解密的string
+ *  @param secretKeyParam 解密的string
  *
  *  @return 返回加密后的string
  */

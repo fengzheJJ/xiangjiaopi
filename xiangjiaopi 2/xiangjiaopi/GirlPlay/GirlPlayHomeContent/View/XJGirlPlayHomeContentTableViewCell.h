@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "XJGirlPlayHomeContentItemModel.h"
 
-#define XJGirlPlayHomeContentTableViewCellH (189)
+#define XJGirlPlayHomeContentTableViewCellH (126)
 
 typedef void(^XJGirlPlayHomeContentTableViewCellPlayBlock)(XJGirlPlayHomeContentItemModel * itemModel);
 typedef void(^XJGirlPlayHomeContentTableViewCellCallBlock)(XJGirlPlayHomeContentItemModel * itemModel);

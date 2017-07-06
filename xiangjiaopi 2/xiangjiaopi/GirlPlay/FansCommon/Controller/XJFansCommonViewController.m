@@ -1,24 +1,24 @@
 //
-//  XJGirlPlayContentViewController.m
+//  XJFansCommonViewController.m
 //  xiangjiaopi
 //
-//  Created by 邓汉森 on 2017/7/4.
+//  Created by 邓汉森 on 2017/7/5.
 //  Copyright © 2017年 appstore@dongao.com. All rights reserved.
 //
 
-#import "XJGirlPlayContentViewController.h"
-#import "XJGirlPlayHomeContentItemModel.h"
-#import "XJGirlPlayHomeContentTableViewCell.h"
-
 #import "XJFansCommonViewController.h"
+#import "XJFansCommonItemModel.h"
+#import "XJFansCommonTableViewCell.h"
+#import "MJExtension.h"
 
-@interface XJGirlPlayContentViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface XJFansCommonViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)NSMutableArray *dataArr;
 @property (nonatomic,strong)UITableView *mainTableView;
 @end
 
-@implementation XJGirlPlayContentViewController
+@implementation XJFansCommonViewController
+
 #pragma mark - life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,6 +26,11 @@
     [self setupFrames];
     [self loadData];
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
 
 #pragma mark - setup
@@ -43,7 +48,7 @@
 }
 
 - (void)loadData{
-
+    
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     dict[@"act_time"] = @"0";
     dict[@"limit"] = @"20";
@@ -51,7 +56,7 @@
     dict[@"lat"] = @"45.2343243";
     [[XJNetApiManager sharedManager] request_homepagehot_params:dict block:^(id data, NSError *error) {
         if (!error) {
-            self.dataArr = [XJGirlPlayHomeContentItemModel mj_objectArrayWithKeyValuesArray:data[@"data"]];
+            self.dataArr = [XJFansCommonItemModel mj_objectArrayWithKeyValuesArray:data[@"data"]];
         }
         [self.mainTableView reloadData];
     }];
@@ -73,34 +78,21 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    XJGirlPlayHomeContentTableViewCell * cell = [XJGirlPlayHomeContentTableViewCell cellWithTableView:tableView];
+    
+    XJFansCommonTableViewCell * cell = [XJFansCommonTableViewCell cellWithTableView:tableView];
     if (self.dataArr.count) {
         cell.itemModel = self.dataArr[indexPath.row];
-        __weak typeof(self)weakSelf = self;
-        cell.callBlock = ^(XJGirlPlayHomeContentItemModel *itemModel) {
-            
-        };
-        cell.playBlock = ^(XJGirlPlayHomeContentItemModel *itemModel) {
-            
-        };
     }
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    return XJGirlPlayHomeContentTableViewCellH;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    XJFansCommonViewController *vC = [[XJFansCommonViewController alloc]init];
-    [self.navigationController pushViewController:vC animated:YES];
+    return XJFansCommonTableViewCellH;
 }
 #pragma mark - setter and getter
 - (UITableView *)mainTableView{
-
+    
     if (!_mainTableView) {
         _mainTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         _mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
