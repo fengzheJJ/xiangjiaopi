@@ -113,6 +113,8 @@
 		4DFDFEE11F092881001719B1 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFDFECB1F092881001719B1 /* UIImageView+WebCache.m */; };
 		4DFDFEE21F092881001719B1 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFDFECD1F092881001719B1 /* UIView+WebCache.m */; };
 		4DFDFEE31F092881001719B1 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFDFECF1F092881001719B1 /* UIView+WebCacheOperation.m */; };
+		B6155C981F0FFD0B0020CCD3 /* JDColorConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155C951F0FFD0B0020CCD3 /* JDColorConfig.m */; };
+		B6155C991F0FFD0B0020CCD3 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155C971F0FFD0B0020CCD3 /* UIColor+Utils.m */; };
 		B628235E1F0BF0CE0042323B /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B628235D1F0BF0CE0042323B /* iconfont.ttf */; };
 /* End PBXBuildFile section */
 
@@ -351,6 +353,10 @@
 		4DFDFECD1F092881001719B1 /* UIView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCache.m"; sourceTree = "<group>"; };
 		4DFDFECE1F092881001719B1 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		4DFDFECF1F092881001719B1 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		B6155C941F0FFD0B0020CCD3 /* JDColorConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDColorConfig.h; sourceTree = "<group>"; };
+		B6155C951F0FFD0B0020CCD3 /* JDColorConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDColorConfig.m; sourceTree = "<group>"; };
+		B6155C961F0FFD0B0020CCD3 /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
+		B6155C971F0FFD0B0020CCD3 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
 		B628235D1F0BF0CE0042323B /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -830,6 +836,7 @@
 		4DF496431F0782B80029F961 /* Categary */ = {
 			isa = PBXGroup;
 			children = (
+				B6155C931F0FFD0B0020CCD3 /* Color */,
 				4D4B7DD61F094CED00789943 /* NSString+Additional.h */,
 				4D4B7DD71F094CED00789943 /* NSString+Additional.m */,
 				4D4B7DCF1F094AB600789943 /* NSObject+Additional.h */,
@@ -1067,6 +1074,17 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		B6155C931F0FFD0B0020CCD3 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				B6155C941F0FFD0B0020CCD3 /* JDColorConfig.h */,
+				B6155C951F0FFD0B0020CCD3 /* JDColorConfig.m */,
+				B6155C961F0FFD0B0020CCD3 /* UIColor+Utils.h */,
+				B6155C971F0FFD0B0020CCD3 /* UIColor+Utils.m */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 		B628235A1F0BEDDC0042323B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1231,6 +1249,7 @@
 				4D4B7E471F0BBF1000789943 /* XJGirlPlayContentViewController.m in Sources */,
 				4DFDFE821F09285A001719B1 /* AFURLSessionManager.m in Sources */,
 				4DF495E71F077F120029F961 /* ViewController.m in Sources */,
+				B6155C991F0FFD0B0020CCD3 /* UIColor+Utils.m in Sources */,
 				4DFDFE9C1F09286C001719B1 /* MJFoundation.m in Sources */,
 				4DFDFE6B1F09104D001719B1 /* NSBundle+MJRefresh.m in Sources */,
 				4DFDFE6A1F09104D001719B1 /* MJRefreshConst.m in Sources */,
@@ -1301,6 +1320,7 @@
 				4DFDFE9B1F09286C001719B1 /* MJExtensionConst.m in Sources */,
 				4DFDFEA21F09286C001719B1 /* NSObject+MJKeyValue.m in Sources */,
 				4D4B7E441F0BAFF300789943 /* UIColor+hexString.m in Sources */,
+				B6155C981F0FFD0B0020CCD3 /* JDColorConfig.m in Sources */,
 				4DFDFED81F092881001719B1 /* SDWebImageDownloader.m in Sources */,
 				4D1058E31F0D30450071937F /* XJFansCommonItemModel.m in Sources */,
 				4D4B7E321F0B5EE300789943 /* XJGirlPlayViewController.m in Sources */,

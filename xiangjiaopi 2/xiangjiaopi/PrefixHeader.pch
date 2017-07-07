@@ -38,9 +38,16 @@
    // #import "CLCAnswerQuestionDefine.h"
   //  #import "AFNetworkReachabilityManager.h"
 
+#define IsIphone4 (App.window.bounds.size.width * 3 == App.window.bounds.size.height * 2)
+#import "UIColor+Utils.h"
+#import "JDColorConfig.h"
+
 #ifdef DEBUG //调试状态, 打开LOG功能
+
+#define debug(format, ...)  NSLog(format, ## __VA_ARGS__)
 #define MyLog(...) NSLog(__VA_ARGS__)
 #else //发布状态, 关闭LOG功能
+#define debug(format, ...)
 #define MyLog(...)
 #endif//DEBUG
 
