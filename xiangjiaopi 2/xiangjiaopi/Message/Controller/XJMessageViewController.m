@@ -7,6 +7,8 @@
 //
 
 #import "XJMessageViewController.h"
+#import "XJMessageRootHeadView.h"
+#import "XJMessageNotMessageView.h"
 
 @interface XJMessageViewController ()
 
@@ -16,7 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    XJMessageRootHeadView *headView = [[XJMessageRootHeadView alloc]initWithFrame:(CGRect){0,0,self.view.frame.size.width, 55}];
+    [self.view addSubview:headView];
+    
+    XJMessageNotMessageView *notMessageView = [[XJMessageNotMessageView alloc]initWithFrame:(CGRect){0,55,self.view.frame.size.width, self.view.frame.size.height - 55}];
+    [self.view addSubview:notMessageView];
+    
 }
 
 - (void)didReceiveMemoryWarning {

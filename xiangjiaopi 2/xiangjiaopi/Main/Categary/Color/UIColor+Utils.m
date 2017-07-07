@@ -26,6 +26,6 @@
     return [UIColor colorWithRed:((color & 0xFF0000) >> 16)/255.0 green:((color & 0xFF00) >> 8)/255.0 blue:(color & 0xFF)/255.0 alpha:1.0];
 }
 
-//JDMainBackgroundColor 封装的背景色，用来挑选颜色
+//XJMainBackgroundColor 封装的背景色，用来挑选颜色
 
 @end

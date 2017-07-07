@@ -115,6 +115,8 @@
 		4DFDFEE31F092881001719B1 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFDFECF1F092881001719B1 /* UIView+WebCacheOperation.m */; };
 		B6155C981F0FFD0B0020CCD3 /* JDColorConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155C951F0FFD0B0020CCD3 /* JDColorConfig.m */; };
 		B6155C991F0FFD0B0020CCD3 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155C971F0FFD0B0020CCD3 /* UIColor+Utils.m */; };
+		B6155C9C1F1008C80020CCD3 /* XJMessageRootHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155C9A1F1008C80020CCD3 /* XJMessageRootHeadView.m */; };
+		B6155C9F1F102C1E0020CCD3 /* XJMessageNotMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155C9E1F102C1E0020CCD3 /* XJMessageNotMessageView.m */; };
 		B628235E1F0BF0CE0042323B /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B628235D1F0BF0CE0042323B /* iconfont.ttf */; };
 /* End PBXBuildFile section */
 
@@ -357,6 +359,10 @@
 		B6155C951F0FFD0B0020CCD3 /* JDColorConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDColorConfig.m; sourceTree = "<group>"; };
 		B6155C961F0FFD0B0020CCD3 /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
 		B6155C971F0FFD0B0020CCD3 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
+		B6155C9A1F1008C80020CCD3 /* XJMessageRootHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJMessageRootHeadView.m; sourceTree = "<group>"; };
+		B6155C9B1F1008C80020CCD3 /* XJMessageRootHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJMessageRootHeadView.h; sourceTree = "<group>"; };
+		B6155C9D1F102C1E0020CCD3 /* XJMessageNotMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJMessageNotMessageView.h; sourceTree = "<group>"; };
+		B6155C9E1F102C1E0020CCD3 /* XJMessageNotMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJMessageNotMessageView.m; sourceTree = "<group>"; };
 		B628235D1F0BF0CE0042323B /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -766,6 +772,10 @@
 		4DF496261F0780FC0029F961 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B6155C9B1F1008C80020CCD3 /* XJMessageRootHeadView.h */,
+				B6155C9A1F1008C80020CCD3 /* XJMessageRootHeadView.m */,
+				B6155C9D1F102C1E0020CCD3 /* XJMessageNotMessageView.h */,
+				B6155C9E1F102C1E0020CCD3 /* XJMessageNotMessageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1176,7 +1186,8 @@
 				TargetAttributes = {
 					4DF495DB1F077F120029F961 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 4MR9Z7C883;
+						ProvisioningStyle = Automatic;
 					};
 					4DF495F41F077F120029F961 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -1314,8 +1325,10 @@
 				4DFDFE6E1F09104D001719B1 /* UIView+MJExtension.m in Sources */,
 				4DFDFED31F092881001719B1 /* NSImage+WebCache.m in Sources */,
 				4DB5DA521F078C5B00D00828 /* ZJSegmentStyle.m in Sources */,
+				B6155C9F1F102C1E0020CCD3 /* XJMessageNotMessageView.m in Sources */,
 				4D4B7E361F0B5F0700789943 /* CMPlayerManager.m in Sources */,
 				4DFDFE601F09104D001719B1 /* MJRefreshAutoGifFooter.m in Sources */,
+				B6155C9C1F1008C80020CCD3 /* XJMessageRootHeadView.m in Sources */,
 				4DF496461F0782C70029F961 /* UIImage+Extension.m in Sources */,
 				4DFDFE9B1F09286C001719B1 /* MJExtensionConst.m in Sources */,
 				4DFDFEA21F09286C001719B1 /* NSObject+MJKeyValue.m in Sources */,
@@ -1497,7 +1510,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4MR9Z7C883;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/xiangjiaopi/PrefixHeader.pch";
 				INFOPLIST_FILE = xiangjiaopi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1513,7 +1526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4MR9Z7C883;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/xiangjiaopi/PrefixHeader.pch";
 				INFOPLIST_FILE = xiangjiaopi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
