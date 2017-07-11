@@ -117,6 +117,13 @@
 		B6155C991F0FFD0B0020CCD3 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155C971F0FFD0B0020CCD3 /* UIColor+Utils.m */; };
 		B6155C9C1F1008C80020CCD3 /* XJMessageRootHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155C9A1F1008C80020CCD3 /* XJMessageRootHeadView.m */; };
 		B6155C9F1F102C1E0020CCD3 /* XJMessageNotMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155C9E1F102C1E0020CCD3 /* XJMessageNotMessageView.m */; };
+		B6155CA21F1037850020CCD3 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155CA11F1037850020CCD3 /* OneViewController.m */; };
+		B6155CA51F1037A40020CCD3 /* twoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155CA41F1037A40020CCD3 /* twoViewController.m */; };
+		B6155CAD1F1037F30020CCD3 /* threeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155CAC1F1037F30020CCD3 /* threeViewController.m */; };
+		B6155CB01F1042D50020CCD3 /* MyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155CAF1F1042D50020CCD3 /* MyHeadView.m */; };
+		B6155CB31F1045270020CCD3 /* my@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6155CB21F1045270020CCD3 /* my@3x.png */; };
+		B6155CB61F1353A50020CCD3 /* XJMyPriceBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155CB51F1353A50020CCD3 /* XJMyPriceBoxView.m */; };
+		B6155CB91F138E110020CCD3 /* XJMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6155CB81F138E110020CCD3 /* XJMyTableViewCell.m */; };
 		B628235E1F0BF0CE0042323B /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B628235D1F0BF0CE0042323B /* iconfont.ttf */; };
 /* End PBXBuildFile section */
 
@@ -363,6 +370,19 @@
 		B6155C9B1F1008C80020CCD3 /* XJMessageRootHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJMessageRootHeadView.h; sourceTree = "<group>"; };
 		B6155C9D1F102C1E0020CCD3 /* XJMessageNotMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJMessageNotMessageView.h; sourceTree = "<group>"; };
 		B6155C9E1F102C1E0020CCD3 /* XJMessageNotMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJMessageNotMessageView.m; sourceTree = "<group>"; };
+		B6155CA01F1037850020CCD3 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		B6155CA11F1037850020CCD3 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		B6155CA31F1037A40020CCD3 /* twoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twoViewController.h; sourceTree = "<group>"; };
+		B6155CA41F1037A40020CCD3 /* twoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = twoViewController.m; sourceTree = "<group>"; };
+		B6155CAB1F1037F30020CCD3 /* threeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threeViewController.h; sourceTree = "<group>"; };
+		B6155CAC1F1037F30020CCD3 /* threeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = threeViewController.m; sourceTree = "<group>"; };
+		B6155CAE1F1042D50020CCD3 /* MyHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHeadView.h; sourceTree = "<group>"; };
+		B6155CAF1F1042D50020CCD3 /* MyHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHeadView.m; sourceTree = "<group>"; };
+		B6155CB21F1045270020CCD3 /* my@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my@3x.png"; sourceTree = "<group>"; };
+		B6155CB41F1353A50020CCD3 /* XJMyPriceBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJMyPriceBoxView.h; sourceTree = "<group>"; };
+		B6155CB51F1353A50020CCD3 /* XJMyPriceBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJMyPriceBoxView.m; sourceTree = "<group>"; };
+		B6155CB71F138E110020CCD3 /* XJMyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJMyTableViewCell.h; sourceTree = "<group>"; };
+		B6155CB81F138E110020CCD3 /* XJMyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJMyTableViewCell.m; sourceTree = "<group>"; };
 		B628235D1F0BF0CE0042323B /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -776,6 +796,12 @@
 				B6155C9A1F1008C80020CCD3 /* XJMessageRootHeadView.m */,
 				B6155C9D1F102C1E0020CCD3 /* XJMessageNotMessageView.h */,
 				B6155C9E1F102C1E0020CCD3 /* XJMessageNotMessageView.m */,
+				B6155CA01F1037850020CCD3 /* OneViewController.h */,
+				B6155CA11F1037850020CCD3 /* OneViewController.m */,
+				B6155CA31F1037A40020CCD3 /* twoViewController.h */,
+				B6155CA41F1037A40020CCD3 /* twoViewController.m */,
+				B6155CAB1F1037F30020CCD3 /* threeViewController.h */,
+				B6155CAC1F1037F30020CCD3 /* threeViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -817,6 +843,12 @@
 		4DF4962B1F0780FC0029F961 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B6155CAE1F1042D50020CCD3 /* MyHeadView.h */,
+				B6155CAF1F1042D50020CCD3 /* MyHeadView.m */,
+				B6155CB41F1353A50020CCD3 /* XJMyPriceBoxView.h */,
+				B6155CB51F1353A50020CCD3 /* XJMyPriceBoxView.m */,
+				B6155CB71F138E110020CCD3 /* XJMyTableViewCell.h */,
+				B6155CB81F138E110020CCD3 /* XJMyTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1095,6 +1127,14 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		B6155CB11F1045270020CCD3 /* my */ = {
+			isa = PBXGroup;
+			children = (
+				B6155CB21F1045270020CCD3 /* my@3x.png */,
+			);
+			path = my;
+			sourceTree = "<group>";
+		};
 		B628235A1F0BEDDC0042323B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1107,6 +1147,7 @@
 		B628235B1F0BEE080042323B /* image */ = {
 			isa = PBXGroup;
 			children = (
+				B6155CB11F1045270020CCD3 /* my */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -1231,6 +1272,7 @@
 				B628235E1F0BF0CE0042323B /* iconfont.ttf in Resources */,
 				4DFDFE9A1F09286C001719B1 /* Info.plist in Resources */,
 				4DF495EC1F077F120029F961 /* Assets.xcassets in Resources */,
+				B6155CB31F1045270020CCD3 /* my@3x.png in Resources */,
 				4DFDFE691F09104D001719B1 /* MJRefresh.bundle in Resources */,
 				4DF495EA1F077F120029F961 /* Main.storyboard in Resources */,
 			);
@@ -1262,12 +1304,15 @@
 				4DF495E71F077F120029F961 /* ViewController.m in Sources */,
 				B6155C991F0FFD0B0020CCD3 /* UIColor+Utils.m in Sources */,
 				4DFDFE9C1F09286C001719B1 /* MJFoundation.m in Sources */,
+				B6155CB61F1353A50020CCD3 /* XJMyPriceBoxView.m in Sources */,
 				4DFDFE6B1F09104D001719B1 /* NSBundle+MJRefresh.m in Sources */,
 				4DFDFE6A1F09104D001719B1 /* MJRefreshConst.m in Sources */,
 				4D1058F01F0D381D0071937F /* XJGirlPlayDetailViewController.m in Sources */,
 				4D1058E61F0D30610071937F /* XJFansCommonTableViewCell.m in Sources */,
 				4DF495E41F077F120029F961 /* AppDelegate.m in Sources */,
+				B6155CB01F1042D50020CCD3 /* MyHeadView.m in Sources */,
 				4DFDFE7E1F09285A001719B1 /* AFNetworkReachabilityManager.m in Sources */,
+				B6155CB91F138E110020CCD3 /* XJMyTableViewCell.m in Sources */,
 				4DFDFED41F092881001719B1 /* SDImageCache.m in Sources */,
 				4D4B7DDC1F0950C000789943 /* NSDictionary+NetworkingMethods.m in Sources */,
 				4DFDFEA31F09286C001719B1 /* NSObject+MJProperty.m in Sources */,
@@ -1292,9 +1337,11 @@
 				4DFDFE6C1F09104D001719B1 /* UIScrollView+MJExtension.m in Sources */,
 				4D4B7DCE1F0948A400789943 /* XJNetWorkClient.m in Sources */,
 				4DB5DA4F1F078C5B00D00828 /* ZJContentView.m in Sources */,
+				B6155CA21F1037850020CCD3 /* OneViewController.m in Sources */,
 				4DB5DA5C1F078EF400D00828 /* XJFollowViewController.m in Sources */,
 				4DFDFEA11F09286C001719B1 /* NSObject+MJCoding.m in Sources */,
 				4D1058E91F0D34430071937F /* XJFansCommonViewController.m in Sources */,
+				B6155CA51F1037A40020CCD3 /* twoViewController.m in Sources */,
 				4DFDFE5F1F09104D001719B1 /* MJRefreshHeader.m in Sources */,
 				4DFDFE611F09104D001719B1 /* MJRefreshAutoNormalFooter.m in Sources */,
 				4DFDFED21F092881001719B1 /* NSData+ImageContentType.m in Sources */,
@@ -1327,6 +1374,7 @@
 				4DB5DA521F078C5B00D00828 /* ZJSegmentStyle.m in Sources */,
 				B6155C9F1F102C1E0020CCD3 /* XJMessageNotMessageView.m in Sources */,
 				4D4B7E361F0B5F0700789943 /* CMPlayerManager.m in Sources */,
+				B6155CAD1F1037F30020CCD3 /* threeViewController.m in Sources */,
 				4DFDFE601F09104D001719B1 /* MJRefreshAutoGifFooter.m in Sources */,
 				B6155C9C1F1008C80020CCD3 /* XJMessageRootHeadView.m in Sources */,
 				4DF496461F0782C70029F961 /* UIImage+Extension.m in Sources */,

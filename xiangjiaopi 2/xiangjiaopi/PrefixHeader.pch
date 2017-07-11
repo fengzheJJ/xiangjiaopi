@@ -39,6 +39,7 @@
   //  #import "AFNetworkReachabilityManager.h"
 
 #define IsIphone4 (App.window.bounds.size.width * 3 == App.window.bounds.size.height * 2)
+#define App ((AppDelegate*)[UIApplication sharedApplication].delegate)
 #import "UIColor+Utils.h"
 #import "JDColorConfig.h"
 

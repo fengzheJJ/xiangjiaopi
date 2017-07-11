@@ -7,8 +7,14 @@
 //
 
 #import "XJMyProfileViewController.h"
+#import "MyHeadView.h"
+#import "XJMyTableViewCell.h"
 
-@interface XJMyProfileViewController ()
+#define myTableViewCellDentifier @"XJMyTableViewCell"
+@interface XJMyProfileViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong)UITableView * myTableView;
+@property (nonatomic, strong)MyHeadView * myView;
 
 @end
 
@@ -17,12 +23,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"----test");
-    // Do any additional setup after loading the view.
+    self.title = @"我的";
+    [self creatTableView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)creatTableView {
+    
+    self.myTableView = [[UITableView alloc]initWithFrame:self.view.frame];
+    self.myTableView.delegate = self;
+    self.myTableView.dataSource = self;
+    [self.myTableView registerClass:[XJMyTableViewCell class] forCellReuseIdentifier:myTableViewCellDentifier];
+    [self.view addSubview:self.myTableView];
+    
+    self.myView = [[MyHeadView alloc]initWithFrame:(CGRect){0,0,self.view.frame.size.width,420}];
+    self.myTableView.tableHeaderView = self.myView;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSArray * array = [NSArray arrayWithObjects:@"交易记录",@"帮助",@"设置", nil];
+    
+    XJMyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:myTableViewCellDentifier];
+    [cell settitleLabelText:array[indexPath.row]];
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 60;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 /*

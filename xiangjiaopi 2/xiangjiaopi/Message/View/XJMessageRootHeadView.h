@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KQUINavigationViewController.h"
 
 @interface XJMessageRootHeadView : UIView
+
+@property (nonatomic,weak)KQUINavigationViewController * rootNav;
 
 @end

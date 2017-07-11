@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"消息";
     XJMessageRootHeadView *headView = [[XJMessageRootHeadView alloc]initWithFrame:(CGRect){0,0,self.view.frame.size.width, 55}];
     [self.view addSubview:headView];
     

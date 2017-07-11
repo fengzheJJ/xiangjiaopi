@@ -8,6 +8,10 @@
 
 #import "XJMessageRootHeadView.h"
 
+#import "OneViewController.h"
+#import "twoViewController.h"
+#import "threeViewController.h"
+
 @interface XJMessageRootHeadView ()
 
 @property (nonatomic, strong) NSArray * dataArray;
@@ -32,11 +36,11 @@
 - (void)setHeadButton {
     
     NSInteger index;
-    self.dataArray = [NSArray arrayWithObjects:@"\U0000e65a 消息中心",@"\U0000e650 订单助手",@"\U0000e646 反馈助手", nil];
-    for (index = 0; index < 3; index ++) {
-        CGFloat Width = (self.frame.size.width - 50) / 3 ;
+    self.dataArray = [NSArray arrayWithObjects:@"\U0000e65a 消息中心",@"\U0000e646 反馈助手", nil];
+    for (index = 0; index < self.dataArray.count; index ++) {
+        CGFloat Width = (self.frame.size.width - 45) / self.dataArray.count ;
         UIButton * headButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        headButton.frame = CGRectMake(15 + (Width + 10) *index, 10, Width, 34);
+        headButton.frame = CGRectMake(15 + (Width + 15) *index, 10, Width, 34);
         headButton.tag = 1000 + index;
         headButton.backgroundColor = [UIColor whiteColor];
         NSString *titleText = self.dataArray[index];
@@ -60,6 +64,16 @@
 - (void)headButtonOnclick:(UIButton *)button {
     NSInteger index = button.tag - 1000;
     debug(@"%ld",(long)index);
+    if (index == 1) {
+        OneViewController *one = [[OneViewController alloc]init];
+//        [self.navigationController pushViewController:one animated:YES];
+    } else if (index == 2) {
+        twoViewController *two = [[twoViewController alloc]init];
+//        [self.navigationController pushViewController:two animated:YES];
+    } else if (index == 3) {
+        threeViewController *three = [[threeViewController alloc]init];
+//        [self.navigationController pushViewController:three animated:YES];
+    }
 }
 
 @end

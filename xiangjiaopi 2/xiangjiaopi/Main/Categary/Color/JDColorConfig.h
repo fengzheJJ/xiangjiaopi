@@ -18,6 +18,7 @@ typedef NS_ENUM(NSUInteger,XJTextColor) {
     XJTextMainTitleColor = 0X262a2e, /* 消息页面title按键颜色 */
     XJTextSecondTextColor = 0xa3a3a3, 
     XJTextSecondTitleColor = 0xe4e4e4, /* 二级按键颜色 */
+    XJMyYellowColor = 0xffa200, /* 我的页面数字颜色 */
 };
 
 // 辅助色 auxiliary
